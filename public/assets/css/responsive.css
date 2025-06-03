@@ -1,0 +1,406 @@
+/* ************************************************************
+:: Template Name: Hostbit – Domain Hosting Provider HTML Template
+:: Template URI: https://theme-land.com/hostit/
+:: Template Author Name: theme_land
+:: Template Author URI: hridoy1272@gmail.com
+:: Version: 1.0.0
+:: Created: 01 Jan 2021
+************************************************************ 
+*
+*
+******* :: INDEX OF RESPONSIVE CSS :: *******
+:: 1.0 COMMON CSS
+:: 2.0 HEADER AREA CSS
+:: 3.0 WELCOME AREA CSS
+:: 4.0 PRICE PLAN AREA CSS
+:: 5.0 FAQ AREA CSS
+:: 6.0 BREADCRUMB AREA CSS
+:: 7.0 FOOTER AREA CSS
+****************************** */
+
+/* ******************************
+:: 1.0 COMMON CSS
+****************************** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150 {
+        padding: 100px 0;
+    }
+
+    .ptb_100 {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .res-margin {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150,
+    .ptb_100 {
+        padding: 50px 0;
+    }
+
+    .res-margin {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .avatar-lg {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .ptb_180 {
+        padding: 80px 0;
+    }
+
+    .single-counter span {
+        font-size: 3em;
+    }
+}
+
+/*SECTION HEADING*/
+@media (max-width: 991px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2em;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    p {
+        line-height: 26px;
+    }
+}
+
+/*BUTTONS*/
+@media (max-width: 575px) {
+    .button-group a {
+        margin-top: 0;
+        margin-right: 5px;
+    }
+}
+
+/* ******************************
+:: 2.0 HEADER AREA CSS
+****************************** */
+@media(max-width: 1199px) {
+    header .navbar-expand .navbar-nav.toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    header .navbar-expand .navbar-nav.items,
+    header .navbar-expand .navbar-nav.icons .social {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    header .navbar-expand .navbar-nav.action .btn {
+        padding: 5px 10px;
+        font-size: 0;
+    }
+
+    header .navbar-expand .navbar-nav.action .btn .contact-icon {
+        font-size: initial;
+        margin: 0;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal-body {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .search-title {
+        font-size: 40px;
+    }
+}
+
+/* ******************************
+:: 3.0 WELCOME AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .welcome-area,
+    .inner .welcome-area {
+        height: 700px !important;
+    }
+
+    .welcome-thumb-1 > img {
+        max-width: 300px;
+    }
+
+    .welcome-thumb-2 {
+        left: -24%;
+    }
+
+    .welcome-thumb-2 > img {
+        max-width: 80px;
+    }
+
+    .welcome-thumb-3 {
+        left: 2%;
+    }
+
+    .welcome-thumb-3 > img {
+        max-width: 100px;
+    }
+
+    .welcome-thumb-4 > img {
+        max-width: 90px;
+    }
+
+    .welcome-thumb-5 {
+        left: 60%;
+    }
+
+    .welcome-thumb-5 > img {
+        max-width: 110px;
+    }
+
+    .welcome-thumb-6 > img {
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-area {
+        height: 100% !important;
+        padding-top: 90px;
+    }
+
+    .welcome-intro {
+        margin-top: 30px;
+    }
+
+    .welcome-intro h1 {
+        font-size: 50px;
+    }
+
+    .welcome-thumb-1 > img {
+        max-width: 350px;
+        margin-left: auto;
+    }
+
+    .welcome-thumb-2 {
+        left: 16%;
+    }
+
+    .welcome-thumb-3 {
+        left: 30%;
+    }
+
+    .welcome-thumb-4 {
+        left: 43%;
+    }
+
+    .welcome-thumb-5 {
+        left: 70%;
+    }
+
+    .welcome-thumb-6 {
+        left: 35%;
+    }
+}
+
+@media (max-width: 575px) {
+    .welcome-area {
+        overflow: visible !important;
+    }
+
+    .welcome-intro {
+        margin-top: 0;
+    }
+
+    .welcome-intro h1 {
+        font-size: 45px;
+    }
+
+    .welcome-thumb-1 > img {
+        max-width: 250px;
+    }
+
+    .welcome-thumb-2 {
+        top: 16%;
+        left: 8%;
+    }
+
+    .welcome-thumb-2 > img {
+        max-width: 65px;
+    }
+
+    .welcome-thumb-3 {
+        top: 36%;
+        left: 25%;
+    }
+
+    .welcome-thumb-3 > img,
+    .welcome-thumb-4 > img {
+        max-width: 80px;
+    }
+
+    .welcome-thumb-4 {
+        top: 30%;
+        left: 40%;
+    }
+
+    .welcome-thumb-5 > img {
+        max-width: 90px;
+    }
+
+    .welcome-thumb-6 {
+        left: 32%;
+    }
+
+    .welcome-thumb-6 > img {
+        max-width: 70px;
+    }
+}
+
+/* ******************************
+:: 4.0 PRICE PLAN AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .single-price-plan {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .price-plan-wrapper .single-price-plan {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .single-price-plan .price-top > h3 {
+        font-size: 24px;
+    }
+
+    .price-plan-wrapper .plan-select,
+    .price-plan-wrapper .featured .plan-select {
+        padding: 20px;
+    }
+
+    .price-plan-wrapper .featured {
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .price-plan-wrapper .featured .price-header {
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .price-plan-wrapper .single-price-plan {
+        width: 100%;
+    }
+
+    .single-price-plan:first-of-type {
+        margin-top: 0;
+    }
+
+    .single-price-plan .price-top > h3 {
+        font-size: 26px;
+    }
+
+    .single-price-plan .price-top p {
+        font-size: 18px;
+    }
+}
+
+/* ******************************
+:: 5.0 FAQ AREA CSS
+****************************** */
+@media (max-width: 575px) {
+    .card-header .btn {
+        line-height: 1.4;
+    }
+}
+
+/* ******************************
+:: 6.0 BREADCRUMB AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .breadcrumb-content > h2 {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 575px) {
+    .breadcrumb-content > h2 {
+        font-size: 45px;
+    }
+}
+
+/* ******************************
+:: 7.0 FOOTER AREA CSS
+****************************** */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+
+    .footer-area .col-12:last-of-type .footer-items {
+        margin-bottom: 0;
+    }
+}
