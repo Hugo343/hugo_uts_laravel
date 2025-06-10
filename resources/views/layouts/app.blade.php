@@ -9,6 +9,7 @@
     @stack('css')
 </head>
 <body>
+    @include('partials.header')
 
 
 
@@ -16,10 +17,18 @@
 
 
 
-    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
-    @stack('js')
+   <!-- jQuery -->
+<script src="{{ asset('assets/js/jquery/jquery-3.5.1.min.js') }}"></script>
 
+<!-- Bootstrap -->
+<script src="{{ asset('assets/js/bootstrap/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap/bootstrap.min.js') }}"></script>
+
+<!-- Plugin & Active -->
+<script src="{{ asset('assets/js/plugins/plugins.min.js') }}"></script>
+<script src="{{ asset('assets/js/active.js') }}"></script>
+
+    @stack('js')
+    @include('partials.footer')
 </body>
 </html>

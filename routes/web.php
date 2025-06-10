@@ -19,3 +19,4 @@ Route::view('domain-transfer', 'pages.domain-transfer')->name('domain.transfer')
 Route::view('domain-checker', 'pages.domain-checker')->name('domain.checker');
 Route::view('data-center', 'pages.data-center')->name('data.center');
 
+

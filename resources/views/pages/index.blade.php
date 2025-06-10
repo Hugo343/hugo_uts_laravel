@@ -1,67 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Index')
+@section('title', 'Home')
 
 @section('content')
-    <!--====== Preloader Area Start ======-->
-    <div id="preloader">
-        <!-- Hostbit Preloader -->
-        <div id="hostbit-preloader" class="hostbit-preloader">
-            <!-- Preloader Animation -->
-            <div class="preloader-animation">
-                <!-- Spinner -->
-                <div class="spinner"></div>
-                <!-- Loader -->
-                <div class="loader">
-                    <span data-text-preloader="H" class="animated-letters">H</span>
-                    <span data-text-preloader="O" class="animated-letters">O</span>
-                    <span data-text-preloader="S" class="animated-letters">S</span>
-                    <span data-text-preloader="T" class="animated-letters">T</span>
-                    <span data-text-preloader="B" class="animated-letters">B</span>
-                    <span data-text-preloader="I" class="animated-letters">I</span>
-                    <span data-text-preloader="T" class="animated-letters">T</span>
-                </div>
-                <p class="fw-5 text-center text-uppercase">Loading</p>
-            </div>
-            <!-- Loader Animation -->
-            <div class="loader-animation">
-                <div class="row h-100">
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                    <!-- Single Loader -->
-                    <div class="col-3 single-loader p-0">
-                        <div class="loader-bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--====== Preloader Area End ======-->
-
-    <!--====== Scroll To Top Area Start ======-->
-    <div id="scrollUp" title="Scroll To Top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-    <!--====== Scroll To Top Area End ======-->
-
-    <div class="main overflow-hidden">
+<div class="main overflow-hidden">
         <!-- ***** Header Start ***** -->
         <header id="header">
             <!-- Navbar -->
             <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
                 <div class="container header">
                     <!-- Navbar Brand-->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ route('home' ) }}">
                         <img class="navbar-brand-regular" src="assets/img/logo/logo-white.png" alt="brand-logo">
                         <img class="navbar-brand-sticky" src="assets/img/logo/logo.png" alt="sticky brand-logo">
                     </a>
@@ -72,7 +21,7 @@
                             <a class="nav-link" href="#">WordPress <i class="fas fa-angle-down ml-1"></i></a>
                             <ul class="dropdown-menu items">
                                 <li class="nav-item">
-                                    <a href="hosting-wordpress.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.wordpress' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-home media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             WordPress Hosting
@@ -81,7 +30,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-ecommerce.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.ecommerce' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-basket-loaded media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             eCommerce Hosting
@@ -95,7 +44,7 @@
                             <a class="nav-link" href="#">Web Hosting <i class="fas fa-angle-down ml-1"></i></a>
                             <ul class="dropdown-menu items">
                                 <li class="nav-item">
-                                    <a href="hosting-shared.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.shared' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-organization media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Shared Hosting
@@ -104,7 +53,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-vps.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.vps' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-fire media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             VPS Hosting
@@ -113,7 +62,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-email.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.email' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-envelope-open media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Email Hosting
@@ -122,7 +71,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-dedicated.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.dedicated' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-globe media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Dedicated Hosting
@@ -131,7 +80,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-cloud.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.cloud' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-cloud-upload media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Cloud Hosting
@@ -140,7 +89,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="hosting-reseller.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('hosting.reseller' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-speedometer media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Reseller Hosting
@@ -154,7 +103,7 @@
                             <a class="nav-link" href="#">Domains <i class="fas fa-angle-down ml-1"></i></a>
                             <ul class="dropdown-menu items">
                                 <li class="nav-item">
-                                    <a href="domain-checker.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('domain.checker' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-magnifier media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Domain Checker
@@ -163,7 +112,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="domain-transfer.html" class="nav-link d-inline-flex">
+                                    <a href="{{ route('domain.transfer' ) }}" class="nav-link d-inline-flex">
                                         <i class="icon-rocket media mr-3"></i>
                                         <span class="nav-link-item media-body">
                                             Domain Transfer
@@ -180,7 +129,7 @@
                                     <a class="nav-link" href="#">Domains <i class="fas fa-angle-right ml-1"></i></a>
                                     <ul class="dropdown-menu items">
                                         <li class="nav-item">
-                                            <a href="domain-checker.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('domain.checker' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-magnifier media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Domain Checker
@@ -189,7 +138,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="domain-transfer.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('domain.transfer' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-rocket media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Domain Transfer
@@ -203,7 +152,7 @@
                                     <a class="nav-link" href="#">Hosting <i class="fas fa-angle-right ml-1"></i></a>
                                     <ul class="dropdown-menu items">
                                         <li class="nav-item">
-                                            <a href="hosting-shared.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.shared' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-organization media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Shared Hosting
@@ -212,7 +161,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-vps.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.vps' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-fire media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     VPS Hosting
@@ -221,7 +170,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-email.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.email' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-envelope-open media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Email Hosting
@@ -230,7 +179,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-dedicated.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.dedicated' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-globe media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Dedicated Hosting
@@ -239,7 +188,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-cloud.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.cloud' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-cloud-upload media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Cloud Hosting
@@ -248,7 +197,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-reseller.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.reseller' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-speedometer media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     Reseller Hosting
@@ -262,7 +211,7 @@
                                     <a class="nav-link" href="#">WordPress <i class="fas fa-angle-right ml-1"></i></a>
                                     <ul class="dropdown-menu items">
                                         <li class="nav-item">
-                                            <a href="hosting-wordpress.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.wordpress' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-home media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     WordPress Hosting
@@ -271,7 +220,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="hosting-ecommerce.html" class="nav-link d-inline-flex">
+                                            <a href="{{ route('hosting.ecommerce' ) }}" class="nav-link d-inline-flex">
                                                 <i class="icon-basket-loaded media mr-3"></i>
                                                 <span class="nav-link-item media-body">
                                                     eCommerce Hosting
@@ -281,7 +230,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a href="data-center.html" class="nav-link">Data Center</a></li>
+                                <li class="nav-item"><a href="{{ route('data.center' ) }}" class="nav-link">Data Center</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Affiliate</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link disabled">More Coming Soon</a></li>
                             </ul>
@@ -1102,20 +1051,4 @@
         <!--====== Modal Responsive Menu Area End ======-->
 
     </div>
-
-
-    <!-- ***** All jQuery Plugins ***** -->
-
-    <!-- jQuery(necessary for all JavaScript plugins) -->
-    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-
-    <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap/popper.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Plugins js -->
-    <script src="assets/js/plugins/plugins.min.js"></script>
-
-    <!-- Active js -->
-    <script src="assets/js/active.js"></script>
 @endsection
