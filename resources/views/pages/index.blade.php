@@ -2,8 +2,7 @@
 
 @section('title', 'Home')
 
-@section('content')
-<div class="main overflow-hidden">
+@section('content') <div class="main overflow-hidden"> q
         <!-- ***** Welcome Area Start ***** -->
         <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
             <div class="container">

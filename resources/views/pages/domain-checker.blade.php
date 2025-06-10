@@ -405,20 +405,4 @@
         </div>
         <!--====== Modal Responsive Menu Area End ======-->
     </div>
-
-
-    <!-- ***** All jQuery Plugins ***** -->
-
-    <!-- jQuery(necessary for all JavaScript plugins) -->
-    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-
-    <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap/popper.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Plugins js -->
-    <script src="assets/js/plugins/plugins.min.js"></script>
-
-    <!-- Active js -->
-    <script src="assets/js/active.js"></script>
 @endsection
